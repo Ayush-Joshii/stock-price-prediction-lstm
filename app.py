@@ -6,8 +6,7 @@ from keras.models import load_model
 import streamlit as st
 import matplotlib.pyplot as plt
 
-model = load_model('D:\MyProjects\stock\Stock Predictions Model.keras')
-
+model = load_model('Stock Predictions Model.keras')
 st.header('Stock Market Predictor')
 
 stock= st.text_input('Enter Stock Symbol', 'GOOG')
@@ -80,3 +79,4 @@ plt.plot(y,'g',label='Predicted Price')
 plt.ylabel('Price')
 plt.show()
 st.pyplot(fig4)
+
